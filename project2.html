@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-book website</title>
+    <link rel="stylesheet" href="Projectcss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main">
+        <nav>
+            <a href="#" class="logo">
+                <img src="logo1.png">
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label for="menu-btn" class="menu-icon"></label>
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu">
+                 <li><a href="#" class="active">Home</a></li>
+                 <li><a href="#">Previews</a></li>
+                 <li><a href="#">Reviews</a></li>
+                 <li><a href="/author.html" target="_blank">Author</a></li>
+                 <li><a href="/contactus.html" target="_blank" >Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div>
+            <div class="header-text">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      
+                      <p style="width:100%"><h1>Good <span>book</span> don't give all their <span>secrets</span> at once. 
+                    </h1></p>
+                      <p id="ernest">-Stephen King</p>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      
+                      <p style="width:100%"><h1>Books are <span>pass</span> to personal <span>freedom</span>.
+                    </h1></p>
+                      <p id="ernest">-Oprah Winfrey</p>
+                      
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <p style="width:100%"> <h1><span>Paradise</span> will 
+                        be a kind of <span>Library</span>.
+                    </h1></p>
+                      <p id="ernest">-Jorge Luis Borges</p>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      
+                      <p style="width:100%"> <h1>There is no friend
+                                        <span>Loyal</span> as a <span>book</span>.
+                                    </h1></p>
+                                    <p id="ernest">-Ernest Hemingway</p>
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    
+                    <script>
+                    var slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 4000); // Change image every 2 seconds
+                    }
+                    </script>
+            </div>  
+        </div>
+            <div class="header-img">
+                <img src="student.png" >
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-heading">
+            <h2>BOOKS</h2>
+            <p></p>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <img src="WhatsApp Image 2021-07-03 at 8.38.07 PM.jpeg">
+                    <font>Rich Dad Poor Dad</font>
+                    <p>Robert Kiyosaki (Rich Dad Poor Dad) offers personal finance education to help you learn about cash flow, real estate, investing, and business building.</p>
+                    <a href="/Rich.html" target="_blank">Read Book</a><br>
+            </div>
+            <div class="box">
+                <img src="WhatsApp Image 2021-07-03 at 8.38.08 PM (1).jpeg">
+                    <font>Think and Grow Rich</font>
+                    <p>Think and Grow Rich was written by Napoleon Hill in 1937 and promoted as a personal development and self-improvement book.
+                    </p>
+                    <a href="/think.html" target="_blank">Read Book</a><br>
+            </div>
+            <div class="box">
+                <img src="WhatsApp Image 2021-07-03 at 8.38.08 PM (2).jpeg">
+                    <font>The 7 Habits of Highly Effective People</font>
+                    <p>The 7 Habits of Highly Effective People, first published in 1989, is a business and self-help book written by Stephen R. Covey. Covey presents an approach to ...</p>
+                    <a href="/habits.html" target="_blank">Read Book</a><br>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="box-container">
+            <div class="box">
+                <img src="WhatsApp Image 2021-07-03 at 8.38.08 PM.jpeg">
+                    <font>Power of Your subconcious mind</font>
+                    <p>Dr. Murphy combines time-honored spiritual wisdom with cutting-edge scientific research to explain the influence of the subconscious mind on everything you.</p>
+                    <a href="mind.html" target="_blank">Read Book</a><br>
+            </div>
+            <div class="box">
+                <img src="WhatsApp Image 2021-07-03 at 8.38.09 PM (1).jpeg">
+                    <font>The Power of Positive Thinking</font>
+                    <p>An international bestseller with over five million copies in print, The Power of Positive Thinking has helped men and women around the world to achieve ...</p>
+                    <a href="/power.html" target="_blank">Read Book</a><br>
+                
+            </div>
+            <div class="box">
+                <img src="WhatsApp Image 2021-07-03 at 8.38.09 PM.jpeg">
+                    <font>The 4-Hour Work Week</font>
+                    <p>"The 4-Hour Workweek is a new way of solving a very old problem: just how can we work to live and prevent our lives from being all about work? A world of infinite​</p>
+                    <a href="/work.html" target="_blank">Read Book</a><br>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="box-container">
+            <div class="box">
+                <img src="61SMkRMfLnL.jpg">
+                    <font>An entrepreneurial journey</font>
+                    <p>The series of entrepreneurs' autonomous, innovative, and improvised actions throughout the entrepreneurial process will consist the entrepreneurial journey. This ...</p>
+                    <a href="/journey.html" target="_blank">Read Book</a><br>
+            </div>
+            <div class="box">
+                <img src="Cs flow.jpg">
+                    <font>Cashflow-Quadrant</font>
+                    <p>Taking to heart the message that the poor and middle class work for money, but the rich have money work for them, the authors lay out a financial philosophy</p>
+                    <a href="/cashflow.html" target="_blank">Read Book</a><br>
+                
+            </div>
+            <div class="box">
+                <img src="images.jpg">
+                    <font>Dream With Your Eyes Open</font>
+                    <p>The series of entrepreneurs' autonomous, innovative, and improvised actions throughout the entrepreneurial process will consist the entrepreneurial journey. This ...</p>
+                    <a href="/journey.html" target="_blank">Read Book</a><br>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="box-container">
+            <div class="box">
+                <img src="51pUZCSXmWL._SX329_BO1,204,203,200_.jpg">
+                    <font>I Will Teach you to be Rich</font>
+                    <p>I Will Teach You To Be Rich is a 2009 personal finance book by Ramit Sethi who writes a blog of the same name. The book, published by Workman became a New York Times Bestseller. </p>
+                    <a href="/teach.html" target="_blank">Read Book</a><br>
+            </div>
+            <div class="box">
+                <img src="81ikgufsk2L._AC_UL600_SR600,600_.jpg">
+                    <font>Rich Dads Guide to Investing</font>
+                    <p>Personal finance author and lecturer Robert T. Kiyosaki developed his unique economic perspective from two very different influences - two fathers. One father (Robert's real father) was a highly educated man but fiscally poor.</p>
+                    <a href="/guide.html" target="_blank">Read Book</a><br>
+                
+            </div>
+            <div class="box">
+                <img src="81zXPxmuFvL.jpg">
+                    <font>Your Money or Your Life</font>
+                    <p>A fully revised edition of one of the most influential books ever written on personal finance with more than a million copies sold “The best book on money. Period.” –Grant Sabatier, founder of “Millennial Money,” on CNBC</p>
+                    <a href="/money.html" target="_blank">Read Book</a><br>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h3>Subscribe to our Newsletter</h3>
+        <div class="contact-input">
+            <input type="email" placeholder="ADS132@gmail.com">
+            <a href="#">Continue</a>
+        </div>
+    </section>
+
+    
+</body>
+</html>
